@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80.5%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.posi-rele {
+    position: relative;
+}
+
+.z-index {
+    z-index: 99;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {width: 90.5%;}
+}

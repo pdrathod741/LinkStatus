@@ -1,0 +1,91 @@
+.Chef-section {
+    background: $black-primary;
+    padding-top: clamp(1.5625rem, 1.25rem + 1.5625vw, 3.125rem);
+    padding-bottom: clamp(1.5625rem, 1.25rem + 1.5625vw, 3.125rem);
+}
+
+.chef-wrapper {
+    justify-content: center;
+    gap: 20px;
+
+    .chef-img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .chef-text {
+        @include Noah400;
+        width: 40%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        &>span {
+            color: $primary-color;
+            letter-spacing: 3px;
+            font-size: clamp(0.625rem, 0.6rem + 0.125vw, 0.75rem);
+            text-transform: uppercase;
+        }
+
+        & h1 {
+            @include Libre;
+            color: $text-white;
+            font-size: clamp(1.75rem, 1.6rem + 0.75vw, 2.5rem);
+            line-height: clamp(2.8125rem, 2.525rem + 1.4375vw, 4.25rem);
+        }
+
+        &>p {
+            color: $black-secondry;
+            font-size: 14px;
+        }
+
+        .name-sign {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            gap: 15px;
+
+            .sign {
+                width: clamp(3.125rem, 2.875rem + 1.25vw, 4.375rem);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .name {
+                color: $text-white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                gap: 3px;
+
+                & span {
+                    font-size: 13px;
+                }
+                & p {
+                    color: $primary-color;
+                    letter-spacing: 3px;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .chef-wrapper {
+        justify-content: unset;
+
+        .chef-img {
+            width: 100%;
+        }
+        .chef-text {
+            width: 100%;
+        }
+    }
+}

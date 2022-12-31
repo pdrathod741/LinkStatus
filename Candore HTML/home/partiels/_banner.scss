@@ -1,0 +1,94 @@
+.banner-data {
+    color: #ffff;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.banner-left {
+    @include Noah400;
+
+    & h5 {
+        font-size: 12px;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    & h2 {
+        @include Libre;
+        font-size: clamp(1.5625rem, 1.125rem + 2.1875vw, 3.75rem);
+        margin-bottom: clamp(0.5625rem, 0.425rem + 0.6875vw, 1.25rem);
+
+        & span {
+            display: block;
+            font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem);
+            color: $primary-color;
+        }
+    }
+
+    & a {
+        display: inline-block;
+        border: 2px solid $primary-color;
+        padding: 12px 25px;
+        color: $text-white;
+        margin-top: 20px;
+        font-size: clamp(0.5625rem, 0.525rem + 0.1875vw, 0.75rem);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $primary-color;
+            transition: .7s;
+        }
+    }
+}
+
+
+.bounce {
+    text-align: center;
+    bottom: 40px;
+    animation: bounce 2s ease infinite;
+    z-index: 5;
+
+    & button {
+        color: $text-white;
+        border: 1px solid $text-white;
+        padding: 12px 14px;
+        border-radius: 50%;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .banner-left a {
+        padding: 8px 10px;
+    }
+
+    .bounce {
+        bottom: 20px;
+        button {
+            padding: 8px 10px;
+        }
+    }
+}

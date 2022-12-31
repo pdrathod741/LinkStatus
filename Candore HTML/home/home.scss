@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@font-face {
+    font-family:'Noah Regular 400' ;
+    src: url(../assets/fonts/Noah\ Regular\ 400.otf);
+}
+
+@font-face {
+    font-family:'Noah Regular 700' ;
+    src: url(../assets/fonts/Noah\ Bold\ 700.otf);
+}
+
+// General
+
+@import "../general";
+@import "../mixin";
+@import "../variables";
+@import "../OwlCarousel2-2.3.4/src/scss/owl.carousel.scss";
+
+// Modules
+
+@import "../modules/header";
+@import "../modules/footer";
+
+// Partiels
+
+@import "../home/partiels/banner";
+@import "../home/partiels/about";
+@import "../home/partiels/chef";
+@import "../home/partiels/recommends";
+@import "../home/partiels/ourexperts";
+@import "../home/partiels/foodcategory";
+
+// PreLoder
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 1999;
+    /* makes sure it stays on top */
+
+    #status {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        z-index: 2000;
+        /* centers the loading animation horizontally one the screen */
+        top: 50%;
+        /* centers the loading animation vertically one the screen */
+        background-image: url(../assets/images/preloder.gif);
+        /* path to your loading animation */
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -100px 0 0 -100px;
+      }    
+  }
+  
+  
+
+.banner-section {
+    background-image: url(../assets/images/bg-img.jpg);
+    height: 100vh;
+    background-size: cover;
+
+    &::after {
+        content: "" ;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.7;
+    }
+}
+
+@media only screen and (max-width: 852px) {
+    .banner-section {
+        background-image: url(../assets/images/bg-img.jpg);
+        height: 500px;
+    }
+}
+
+
+
+

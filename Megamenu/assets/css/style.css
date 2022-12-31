@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 85.5%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+li {
+    list-style: none;
+}
+
+.posi-rele {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-wrapper {
+    margin-top: 90px;
+    background: #23364b;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo i,
+.toggle-menu i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.menu-link>li,
+.fly-right li,
+.fly-left li,
+.fly-menu li {
+    list-style: none;
+    display: inline-block;
+    padding: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+    transition: all .5s;
+}
+
+.menu-link>li:hover,
+.fly-right>li:hover,
+.fly-menu>li:hover,
+.fly-left>li:hover {
+    background: #009FE1;
+}
+
+.menu-link li a i {
+    padding-right: 8px;
+}
+
+.fly-menu {
+    left: 0;
+    top: 59px;
+    display: none;
+}
+
+.fly-menu li {
+    background: #23364b;
+    width: 90%;
+    width: clamp(7.5rem, 6.25rem + 6.25vw, 13.75rem);
+    font-size: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
+}
+
+
+.flyout:hover .fly-menu {
+    display: block;
+    animation: fade 1s;
+}
+
+.f-right:hover .fly-right,
+.f-left:hover .fly-left {
+    display: block;
+    animation: fade 1s;
+}
+
+.fly-right {
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.fly-left {
+    right: 100%;
+    top: 0%;
+    display: none;
+}
+
+.view-more-btn {
+    background: #009FE1;
+    padding: 4px 7px;
+}
+
+.mega-menu {
+    width: 100%;
+    top: 59px;
+    left: 0;
+    background: #547787;
+    display: none;
+}
+
+.main-mega:hover .mega-menu {
+    display: block;
+    animation: fade 1s;
+}
+
+.m-toggle h3 {
+    font-size: 14px;
+    background: #365670;
+    padding: 10px 90px 10px 10px;
+    color: #cccccc;
+    font-weight: 500;
+}
+
+.feature {
+    width: 30%;
+}
+
+.feature img {
+    padding: 15px 0 11px 15px;
+}
+
+.standers {
+    width: 20%;
+}
+
+.descrip,
+.icon {
+    width: 25%;
+}
+
+.m-toggle ul {
+    margin-top: 20px;
+}
+
+.m-toggle ul li a {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.m-toggle ul li {
+    color: #cccccc;
+    font-size: 13px;
+    padding-bottom: 14px;
+    display: block;
+}
+
+.m-toggle ul li span {
+    display: block;
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+
+.icon ul li a i {
+    background-color: #009FE1;
+    padding: 14px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+/* blog menu */
+
+.blog-menu {
+    background-color: #547787;
+    padding: 11px;
+    display: none;
+    top: 59px;
+    left: 0;
+}
+
+.main-blog:hover .blog-menu {
+    display: block;
+    animation: fade 1s;
+}
+
+.blog-content {
+    width: 33.33%;
+    color: #cccccc;
+}
+
+.blog-content img {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.blog-content h5 {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.blog-content p {
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-right: 40px;
+}
+
+.blog-content a {
+    background: #009FE1;
+    padding: 4px 9px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* image Content */
+
+.img-menu {
+    width: 100%;
+    top: 59px;
+    left: 0;
+    background: #547787;
+    display: none;
+}
+
+.main-img:hover .img-menu {
+    display: block;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.img-content {
+    width: 25%;
+    padding: 15px;
+}
+
+.img-content h5 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.img-content img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1240px) {
+    .feature img {
+        width: 100%;
+        padding: 15px 20px 11px 15px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .mega-menu,.blog-menu, .img-menu  {
+        top: clamp(6.6875rem, 4.9732rem + 3.5714vw, 7.5625rem);
+    }
+    .fly-menu {top: 95px;}
+}
+
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        justify-content: space-between;
+        padding: 10px 25px;
+    }
+
+    .menu-link {
+        width: 100%;
+        display: block;
+        background: #23364b;
+        position: absolute;
+        top: 46px;
+        left: 0;
+        display: none;
+    }
+
+    .fly-right,
+    .fly-left,
+    .mega-menu,
+    .fly-menu,
+    .blog-menu,
+    .img-menu {
+        position: relative;
+        top: 14px;
+        margin-bottom: 12px;
+    }
+
+    .fly-menu {
+        top: 10px;
+    }
+
+    .fly-left,
+    .fly-right {
+        position: relative;
+        left: 0;
+    }
+
+    .feature,
+    .standers,
+    .blog-content {
+        width: 100%;
+    }
+
+    .fly-right li,
+    .fly-left li,
+    .fly-menu li {
+        display: block;
+    }
+
+    .descrip,
+    .icon,
+    .img-content {
+        width: 50%;
+    }
+
+    .menu-link>li {
+        display: block;
+        border-bottom: 1px solid #cccccc;
+    }
+    .slick-arrow::after,
+    .mega-slick::after,
+    .blog-slick::after,
+    .img-slick::after {
+        content: '\f067';
+        font-family: 'FontAwesome';
+        color: #fff;
+        position: absolute;
+        right: 30px;
+    }
+    .menu-link li:hover {
+        background: #23364b;
+    }
+
+    .m-toggle ul li {
+        padding-left: 14px;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+
+    .img-content,
+    .descrip,
+    .icon {
+        width: 100%;
+    }
+
+    .feature img {
+        width: 100%;
+        padding: 15px 18px 11px 15px;
+    }
+
+}

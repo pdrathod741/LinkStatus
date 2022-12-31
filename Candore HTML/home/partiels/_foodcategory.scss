@@ -1,0 +1,79 @@
+.food-category {
+    padding: 40px 0;
+    background: $box-bg;
+
+    .food-top {
+        @include Noah400;
+        text-align: center;
+        position: relative;
+        padding: 30px 0;
+
+        & p {
+            color: $primary-color;
+            letter-spacing: 3px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        & h1 {
+            @include Libre;
+            font-size: 48px;
+            color: $black-primary;
+            position: relative;
+            z-index: 11;
+        }
+
+        & .servi {
+            font-size: 108px;
+            position: absolute;
+            width: 100%;
+            top: 9px;
+            font-family: 'Pinyon Script', cursive;
+            opacity: .2;
+            color: $black-secondry;
+        }
+    }
+}
+
+.food-boxes {
+    justify-content: center;
+    gap: 20px;
+
+    .food-box {
+        width: 30.33%;
+        text-align: center;
+        background: #fdfbf8;
+        padding: 60px;
+        z-index: 99;
+
+        .for-bg {
+            font-size: 200px;
+            text-align: center;
+            left: 30%;
+            top: 30px;
+            opacity: .1;
+            color: $black-secondry;
+            z-index: 0;
+        }
+
+        & i {
+            font-size: 25px;
+            color: $primary-color
+        }
+
+        & h2 {
+            @include Libre;
+            padding: 12px 0;
+        }
+
+        & p {
+            @include Noah400;
+        }
+
+        &:hover i {
+            transition: all .7s;
+            transform: rotate(360deg);
+            color: $black-primary;
+        }
+    }
+}
