@@ -1,0 +1,258 @@
+@media only screen and (max-width: 1580px) {
+  .container {
+    width: 75.1%;
+  }
+  .tab-btn a:first-child {
+    padding: 14px 16px;
+  }
+  .tab-botm a {
+    padding: 12px 40px;
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 1352px) {
+  .ep-text {
+    padding-left: 20px;
+  }
+  .epe-boxes {
+    width: 50%;
+  }
+  .footer-box {
+    width: 49.33%;
+    margin-bottom: 12px;
+  }
+  .article {
+    width: 47%;
+  }
+  .f-btn {
+    padding: 13px 27px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .service-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .service-text {
+    width: 100%;
+  }
+  .header {
+    padding: 11px 20px;
+  }
+  .stucked {
+    padding: 11px 20px;
+    z-index: 200;
+  }
+  .service-text {
+    margin-top: 30px;
+  }
+  .client-boxes {
+    flex-wrap: wrap;
+  }
+  .epe-boxes {
+    width: 50%;
+  }
+  .tab-left {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  .team-box {
+    width: 43%;
+    padding-bottom: 20px;
+  }
+  .people-box {
+    width: 46.33%;
+    margin-bottom: 35px;
+  }
+  .blog-box {
+    width: 48.33%;
+  }
+  .chose-right,
+  .chose-left {
+    width: 100%;
+  }
+  .footer-box {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .footer-box:last-child {
+    margin-bottom: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  .slide-count {
+    display: none;
+  }
+  .slider-data p {
+    margin: 15px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95.1%;
+  }
+  .epe-boxes {
+    width: 100%;
+    overflow: hidden;
+  }
+  .ten-title span {
+    padding: 0;
+  }
+  .ten-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-title {
+    width: 90%;
+  }
+  .article {
+    width: 46%;
+  }
+  .project-slider {
+    padding: 10px 10px;
+  }
+  .element-item {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .slider-data {
+    width: 90%;
+  }
+  .slider-data p {
+    margin: 2px 5px;
+  }
+  .slider-data a {
+    padding: 5px 23px;
+  }
+  .ep-text {
+    height: 100%;
+    padding: 0 10px 30px 10px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .circle-wrap {
+    justify-content: space-between;
+  }
+  .tab-btn a:last-child {
+    padding: 12px 20px;
+  }
+  .tmore {
+    right: 0;
+  }
+  .tab-botm a {
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+  .smore {
+    right: 36%;
+  }
+  .team-box {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .people-box {
+    width: 90%;
+    margin-bottom: 35px;
+  }
+  .blog-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .article {
+    width: 100%;
+  }
+  .client-box {
+    width: 100%;
+  }
+  .client-box img {
+    width: 98%;
+  }
+  .icons a {
+    display: none;
+  }
+  .tab-btn {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tab-img.posi-rele {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-toggle {
+    font-size: 22px;
+    display: block;
+  }
+  .nav-links {
+    top: 56px;
+    display: block;
+    position: absolute;
+    left: -280px;
+    background: #fff;
+    padding: 20px;
+    height: 100vh;
+    width: 280px;
+    transition: ease-in-out 200ms;
+  }
+  .nav-links.active {
+    left: 0;
+    z-index: 11;
+  }
+  .nav-links li {
+    display: block;
+    padding: 20px 0;
+  }
+  .element-data {
+    padding: 25px;
+    top: 4%;
+  }
+  .nav-links li a::after {
+    background-color: #50ba87;
+  }
+  .f-form form input,
+  .f-form form textarea {
+    padding: 10px 12px;
+  }
+  .mobile-data {
+    padding: 20px 10px;
+    width: 100%;
+    display: block;
+  }
+  .mobile-data input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 15%);
+  }
+  .mobile-data input::placeholder {
+    color: #50ba87;
+  }
+  .search-icon {
+    color: #50ba87;
+    top: 5px;
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .element-item {
+    width: 90%;
+  }
+  .smore {
+    right: 30%;
+  }
+  .copyright a:focus-visible {
+    color: gold;
+  }
+}

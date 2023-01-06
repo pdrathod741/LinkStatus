@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <title>Creator HTML</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header" data-sticky-header-container>
+      <div class="row main-header" data-sticky-header>
+        <div class="main-logo">
+          <div class="main-toggle" onclick="MainMenu()">
+            <i onclick="Back(this)" class="fa-solid fa-bars"></i>
+          </div>
+          <a href="" class="logo"
+            ><img src="./assets/images/logo-default.png" alt="logo-default"
+          /></a>
+        </div>
+        <nav class="row">
+          <ul class="nav-links Poppins" id="nav-links">
+            <div class="mobile-data">
+              <div class="posi-rele">
+                <input type="search" name="" id="" placeholder="Search..." class="posi-rele">
+                <span class="posi-ab search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <li><a href="#" class="posi-rele link-active">Home</a></li>
+            <li><a href="#" class="posi-rele">about us</a></li>
+            <li><a href="#" class="posi-rele">typography</a></li>
+            <li><a href="#" class="posi-rele">contact us</a></li>
+          </ul>
+          <ul class="icons">
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-share-nodes"></i></a>
+            <div class="toggle-btn" onclick="toggleSideMenu()">
+              <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+            </div>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="side-menu">
+        <div class="toggle-btn" onclick="toggleSideMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h3 style="color: black">Our Works</h3>
+        <div class="side-gallery">
+          <a
+            href="./assets/images/side-gallery1f.jpg"
+            data-fancybox="side-gallery"
+            class="side-gbox"
+          >
+            <img src="./assets/images/side-gallery1.jpg" alt="" />
+          </a>
+          <a
+            href="./assets/images/side-gallery2f.jpg"
+            data-fancybox="side-gallery"
+            class="side-gbox"
+          >
+            <img src="./assets/images/side-gallery2.jpg" alt="" />
+          </a>
+          <a
+            href="./assets/images/side-gallery3f.jpg"
+            data-fancybox="side-gallery"
+            class="side-gbox"
+          >
+            <img src="./assets/images/side-gallery3.jpg" alt="" />
+          </a>
+          <a
+            href="./assets/images/side-gallery4f.jpg"
+            data-fancybox="side-gallery"
+            class="side-gbox"
+          >
+            <img src="./assets/images/side-gallery4.jpg" alt="" />
+          </a>
+          <a
+            href="./assets/images/side-gallery5f.jpg"
+            data-fancybox="side-gallery"
+            class="side-gbox"
+          >
+            <img src="./assets/images/side-gallery5.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="banner-section">
+      <div class="myslider">
+        <div class="slider-1 posi-rele">
+          <img src="./assets/images/slider-1.jpg" alt="" />
+          <div class="slider-data posi-ab text-white">
+            <h1 class="teko animate__fadeInUp animate__animated animated">
+              Innovative and affordable
+            </h1>
+            <p class="Poppins">
+              Our team uses innovations combined with customized interior
+              planning to deliver the best interior design for your home or
+              office while saving costs.
+            </p>
+            <a
+              href="#"
+              class="teko button--webcoderskull button--border-thick button--text-medium"
+              >GET IN TOUCH</a
+            >
+          </div>
+        </div>
+        <div class="slider-2 posi-rele">
+          <img src="./assets/images/slider-2.jpg" alt="" />
+          <div class="slider-data posi-ab text-white">
+            <h1 class="teko">Committed and professional</h1>
+            <p class="Poppins">
+              All our designers and architects are completely committed to the
+              end result, while being fully professional in all aspects of
+              interior planning and design.
+            </p>
+            <a
+              href="#"
+              class="teko button--webcoderskull button--border-thick button--text-medium"
+              >GET IN TOUCH</a
+            >
+          </div>
+        </div>
+        <div class="slider-3 posi-rele">
+          <img src="./assets/images/slider-3.jpg" alt="" />
+          <div class="slider-data posi-ab text-white">
+            <h1 class="teko">Harmonious and cozy</h1>
+            <p class="Poppins">
+              We develop individual room concepts for private and commercial
+              use. Our team focuses on the interior design of private living
+              rooms, hotels, offices, and more.
+            </p>
+            <a
+              href="#"
+              class="teko button--webcoderskull button--border-thick button--text-medium"
+              >GET IN TOUCH</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="slide-count Poppins slick-active"></div>
+    </div>
+
+    <!-- our service -->
+    <div class="sevice-sec">
+      <div class="container">
+        <div class="row">
+          <div class="service-left posi-rele">
+            <div class="service-img">
+              <img src="./assets/images/serv.jpg" alt="" />
+            </div>
+          </div>
+          <div class="service-text row gap-20">
+            <div class="article posi-rele">
+              <h2 class="teko">See all services</h2>
+              <div class="a-line"></div>
+              <a href="" class="service-btn teko">ALL SERVICES</a>
+            </div>
+            <div class="article posi-rele">
+              <i class="fa-solid fa-crop"></i>
+              <a href="" class="art-tag">Space planning</a>
+              <div class="a-line"></div>
+              <p class="Poppins">
+                We create better interior experiences through space planning
+                services.
+              </p>
+            </div>
+            <div class="article posi-rele">
+              <i class="fa-solid fa-crop"></i>
+              <a href="" class="art-tag">Interior design</a>
+              <div class="a-line"></div>
+              <p class="Poppins">
+                We develop and implement better interior design concepts for
+                you.
+              </p>
+            </div>
+            <div class="article posi-rele">
+              <i class="fa-solid fa-message"></i>
+              <a href="" class="art-tag">Consultations</a>
+              <div class="a-line"></div>
+              <p class="Poppins">
+                Our specialists are ready to consult you on any interior design
+                related topic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div class="project-section">
+      <div class="row">
+        <div class="top-title">
+          <h2>Latest Projects</h2>
+          <p>
+            In our portfolio you can browse the latest interior designs created
+            in various styles and for different purposes. Our qualified design
+            professionals are always ready to design something spectacular for
+            you, even if it’s a residential interior improvement.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-group filters-button-group">
+        <button class="button is-checked" data-filter="*">ALL</button>
+        <button class="button" data-filter=".apart">APARTMENTS</button>
+        <button class="button" data-filter=".office">OFFICES</button>
+        <button class="button" data-filter=".cdesign">CORPORATE DESIGNS</button>
+      </div>
+
+      <div class="grid posi-rele">
+        <div class="element-item apart posi-rele" data-category="transition">
+          <img src="./assets/images/appart1.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/apartfull1.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>861 E. Oklahoma Dr</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item apart posi-rele" data-category="metalloid">
+          <img src="./assets/images/appart2.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/apartfull2.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>830 Bridge Str</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item office posi-rele" data-category="metalloid">
+          <img src="./assets/images/office1.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/offull1.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>64 James Ave</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item office posi-rele" data-category="metalloid">
+          <img src="./assets/images/office2.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/offull2.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>8381 Peg Shop Str</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item office posi-rele" data-category="metalloid">
+          <img src="./assets/images/office3.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/offull3.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>7262 Blue Spring Dr</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item cdesign posi-rele" data-category="metalloid">
+          <img src="./assets/images/c-design1.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/cfull1.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>379 Harvey Rd</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item cdesign posi-rele" data-category="metalloid">
+          <img src="./assets/images/c-design2.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/cfull2.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>14 Pulaski Strd</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+        <div class="element-item cdesign posi-rele" data-category="metalloid">
+          <img src="./assets/images/c-design3.jpg" />
+          <div class="element-data posi-ab">
+            <div class="ele-title row">
+              <a
+                href="./assets/images/cfull3.jpg"
+                data-fancybox="isotope-gallery"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </a>
+              <span>29 Water Ln</span>
+            </div>
+            <p>
+              We work hard on every project to deliver top-notch interior design
+              concepts that satisfy your wishes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+
+    <div class="experience-sec">
+      <div class="container">
+        <div class="row">
+          <div class="epe-boxes ten-title">
+            <span id="main">10</span>
+          </div>
+          <div class="epe-boxes ep-text">
+            <h2>Years of experience</h2>
+            <p>
+              Creator is a renowned interior design studio established in 2008.
+              We create new interiors for homes and offices.
+            </p>
+            <a href="#">GET IN TOUCH</a>
+          </div>
+          <div class="epe-boxes row">
+            <div class="count-box box-1">
+              <span id="number1">2</span>
+              <p>Interiors</p>
+            </div>
+            <div class="count-box box-2">
+              <span id="number2">40</span>
+              <p>Monthly designs</p>
+            </div>
+            <div class="count-box box-3">
+              <span id="number3">12</span>
+              <p>Awards</p>
+            </div>
+            <div class="count-box box-4">
+              <span id="number4">26</span>
+              <p>Employees</p>
+            </div>
+          </div>
+        </div>
+        <div class="row client-boxes">
+          <div class="client-box posi-rele">
+            <img src="./assets/images/clients1.png" alt="" />
+          </div>
+          <div class="client-box posi-rele">
+            <img src="./assets/images/clients2.png" alt="" />
+          </div>
+          <div class="client-box posi-rele">
+            <img src="./assets/images/clients3.png" alt="" />
+          </div>
+          <div class="client-box posi-rele">
+            <img src="./assets/images/clients4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mission -->
+
+    <div class="mission-sec">
+      <div class="main-heading">
+        <h2>Different people — one mission</h2>
+      </div>
+      <div class="row team-boxes">
+        <div class="team-box posi-rele">
+          <img src="./assets/images/team-1.jpg" alt="" />
+          <div class="team-data posi-ab">
+            <h5 class="posi-rele z-index">Ryan Wilson</h5>
+            <p class="posi-rele z-index">Founder, Senior Designer</p>
+          </div>
+        </div>
+        <div class="team-box posi-rele">
+          <img src="./assets/images/team2.jpg" alt="" />
+          <div class="team-data posi-ab">
+            <h5 class="posi-rele z-index">Jill Peterson</h5>
+            <p class="posi-rele z-index">Architect</p>
+          </div>
+        </div>
+        <div class="team-box posi-rele">
+          <img src="./assets/images/team3.jpg" alt="" />
+          <div class="team-data posi-ab">
+            <h5 class="posi-rele z-index">Sam Robinson</h5>
+            <p class="posi-rele z-index">Senior Architect</p>
+          </div>
+        </div>
+        <div class="team-box posi-rele">
+          <img src="./assets/images/team4.jpg" alt="" />
+          <div class="team-data posi-ab">
+            <h5 class="posi-rele z-index">Mary Lee</h5>
+            <p class="posi-rele z-index">Decorator</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tab sec -->
+
+    <div class="tab-sec">
+      <div class="container">
+        <div class="row tab-wrap">
+          <div class="tab-left">
+            <div class="tab-heading">
+              <h3>You dream — we embody</h3>
+            </div>
+            <div class="tab">
+              <button
+                class="tablinks posi-rele active"
+                onclick="openCity(event, '01')"
+              >
+                01
+              </button>
+              <button
+                class="tablinks posi-rele"
+                onclick="openCity(event, '02')"
+              >
+                02
+              </button>
+              <button
+                class="tablinks posi-rele"
+                onclick="openCity(event, '03')"
+              >
+                03
+              </button>
+              <button
+                class="tablinks posi-rele"
+                onclick="openCity(event, '04')"
+              >
+                04
+              </button>
+            </div>
+
+            <div id="01" class="tabcontent tab-active">
+              <h5>Starting with the right idea</h5>
+              <p>
+                Every project we create starts with an idea, which eventually
+                grows into a great design. But before it does, our team proposes
+                several variants to choose from.
+              </p>
+              <div class="tab-btn">
+                <a href="#">GET IN TOUCH</a>
+                <a href="#">DOWNLOAD PRESENTATION</a>
+              </div>
+            </div>
+
+            <div id="02" class="tabcontent">
+              <h5>Developing the initial concept</h5>
+              <p>
+                After choosing the right design idea, our team members cooperate
+                with you to create the initial concept, which will be a
+                prototype of your final interior design.
+              </p>
+              <div class="tab-btn">
+                <a href="#">GET IN TOUCH</a>
+                <a href="#">DOWNLOAD PRESENTATION</a>
+              </div>
+            </div>
+
+            <div id="03" class="tabcontent">
+              <h5>Working on interior design implementation</h5>
+              <p>
+                After completion of the previous stage, we move on to
+                implementing our project and creating a better interior design
+                for your home or office.
+              </p>
+              <div class="tab-btn">
+                <a href="#">GET IN TOUCH</a>
+                <a href="#">DOWNLOAD PRESENTATION</a>
+              </div>
+            </div>
+            <div id="04" class="tabcontent">
+              <h5>Achieving the final result</h5>
+              <p>
+                Finally, we discuss what you like and don’t like in your new
+                interior and try to make sure everything is done the way it
+                should be so that you could enjoy your space.
+              </p>
+              <div class="tab-btn">
+                <a href="#">GET IN TOUCH</a>
+                <a href="#">DOWNLOAD PRESENTATION</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-img posi-rele">
+            <div class="img-border">
+              <img src="./assets/images/tab-rightimg.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- people sec -->
+    <div class="people-sec">
+      <div class="main-heading">
+        <h2>What people Say</h2>
+      </div>
+      <div class="row p-wrap">
+        <div class="people-box posi-rele">
+          <div class="people-data row gap-20 align-center">
+            <img src="./assets/images/p1.jpg" alt="" />
+            <div class="people-name">
+              <h3>Catherine Williams</h3>
+              <p>Local shop owner</p>
+            </div>
+          </div>
+          <p>
+            I chose Creator because of their knowledge, experience and attention
+            to detail that has proven invaluable to me in creating a superior
+            finished project, which attracts more clients to my shop.
+          </p>
+        </div>
+        <div class="people-box posi-rele">
+          <div class="people-data row gap-20 align-center">
+            <img src="./assets/images/p2.jpg" alt="" />
+            <div class="people-name">
+              <h3>Rupert Wood</h3>
+              <p>House owner</p>
+            </div>
+          </div>
+          <p>
+            This agency was highly recommended to me. The sensitivity,
+            knowledge, vision and ultimate execution this firm brought to the
+            table was tremendous. Thank you for the amazing interior!
+          </p>
+        </div>
+        <div class="people-box posi-rele">
+          <div class="people-data row gap-20 align-center">
+            <img src="./assets/images/p3.jpg" alt="" />
+            <div class="people-name">
+              <h3>Samantha Brown</h3>
+              <p>Freelancer</p>
+            </div>
+          </div>
+          <p>
+            Your professional guidance gave me results that far exceeded my
+            expectations. My clients thoroughly enjoy the fun, relaxing ambience
+            that the interior design creates. Thank you!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- blog -->
+
+    <div class="blog-sec">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Latest blog posts</h2>
+        </div>
+        <div class="row blog-boxes">
+          <div class="blog-box">
+            <div class="blog-img posi-rele">
+              <img src="./assets/images/blog1.jpg" alt="" />
+              <div class="blog-time posi-ab">04<span>JULY</span></div>
+            </div>
+            <div class="blog-data">
+              <a href="#">Designing a Children’s room</a>
+              <p>
+                Kids’ bedrooms aren’t usually noted for their sophisticated
+                style. But it’s not a bad idea to design a room that your kid
+                can grow into...
+              </p>
+            </div>
+          </div>
+          <div class="blog-box">
+            <div class="blog-img posi-rele">
+              <img src="./assets/images/blog2.jpg" alt="" />
+              <div class="blog-time posi-ab">17<span>JULY</span></div>
+            </div>
+            <div class="blog-data">
+              <a href="#">Home decor trends</a>
+              <p>
+                Trends are hard to keep up with. Ever-changing, contradictory,
+                and sometimes seemingly senseless, no one can stay perfectly up
+                to...
+              </p>
+            </div>
+          </div>
+          <div class="blog-box">
+            <div class="blog-img posi-rele">
+              <img src="./assets/images/blog3.jpg" alt="" />
+              <div class="blog-time posi-ab">22<span>JULY</span></div>
+            </div>
+            <div class="blog-data">
+              <a href="#">Bedroom space management</a>
+              <p>
+                Any sleep enthusiast would agree that the bedroom is pretty high
+                up on the list of most important rooms in the house. There’s
+                even...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bg sec -->
+
+    <div class="bg-sec">
+      <div class="fg">
+        <img src="./assets/images/banner-fg.png" alt="" />
+      </div>
+    </div>
+
+    <!-- choose us sec -->
+
+    <div class="choose-sec">
+      <div class="container">
+        <div class="row">
+          <div class="chose-left">
+            <img src="./assets/images/chooseleft.jpg" alt="" />
+          </div>
+          <div class="chose-right">
+            <div class="choose-heading"><h2>Why choose us</h2></div>
+            <div class="c-tab">
+              <button class="c-tablinks c-active" onclick="openC(event, 'exp')">
+                Experience
+              </button>
+              <button class="c-tablinks" onclick="openC(event, 'skills')">
+                Skills
+              </button>
+              <button class="c-tablinks" onclick="openC(event, 'mission')">
+                Mission
+              </button>
+            </div>
+
+            <div id="exp" class="c-tabcontent ctab-active">
+              <p>
+                Creator is an internationally recognized and award-winning
+                interior design firm with expertise in residential, commercial,
+                hospitality, retail, healthcare and beauty projects.
+              </p>
+              <div class="eight columns">
+                <div class="progressBar">
+                  <h4>Interior Design</h4>
+                  <div class="progressBarcontainer">
+                    <div class="speech-bubble html">79%</div>
+                    <div class="progressBarValue ht"></div>
+                  </div>
+                </div>
+
+                <div class="progressBar">
+                  <h4>3d modeling</h4>
+                  <div class="progressBarcontainer">
+                    <div class="speech-bubble css">72%</div>
+                    <div class="progressBarValue cs"></div>
+                  </div>
+                </div>
+
+                <div class="progressBar">
+                  <h4>Architecture</h4>
+                  <div class="progressBarcontainer">
+                    <div class="speech-bubble javascript">88%</div>
+                    <div class="progressBarValue js"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- next -->
+            <div id="skills" class="c-tabcontent posi-rele">
+              <div class="circle-wrap">
+                <div class="circle_percent fmore posi-rele" data-percent="87">
+                  <div class="circle_inner">
+                    <div class="round_per"></div>
+                  </div>
+                </div>
+                <div class="circle_percent smore posi-rele" data-percent="74">
+                  <div class="circle_inner">
+                    <div class="round_per rsecond"></div>
+                  </div>
+                </div>
+                <div class="circle_percent tmore posi-rele" data-percent="99">
+                  <div class="circle_inner">
+                    <div class="round_per rthird"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row circle-tags">
+                <h4>Interior Design</h4>
+                <h4>Architecture</h4>
+                <h4>Space Planning</h4>
+              </div>
+              <div class="row tab-botm">
+                <a href="#" class="getin-btn">Get in touch</a>
+                <a href="#" class="dwld-btn">Download presentation</a>
+              </div>
+            </div>
+
+            <div id="mission" class="c-tabcontent">
+              <p>
+                Our mission is simple—working with people to create beautiful
+                homes and environments through inspiration and design. We will
+                take the time to understand you and your project, and then
+                design a plan that suits you.
+              </p>
+              <ul class="m-flex">
+                <li>Interior design</li>
+                <li>Decorating services</li>
+                <li>Furniture selections</li>
+                <li>Space planning</li>
+                <li>Paint consultations</li>
+                <li>Room layouts</li>
+              </ul>
+
+              <div class="row tab-botm">
+                <a href="#" class="getin-btn">Get in touch</a>
+                <a href="#" class="dwld-btn">Download presentation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project time -->
+
+    <div class="project-sec">
+      <div class="main-heading">
+        <h2>Project timeline</h2>
+      </div>
+
+      <div class="project-slider posi-rele">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider-img posi-rele">
+                <img src="./assets/images/project-1.jpg" alt="" />
+                <div class="pop-data posi-ab">
+                  <a
+                    href="./assets/images/project-1full.jpg"
+                    data-fancybox="slider-gallery"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work-data posi-rele">
+                <a href="#">Los Angeles coworking center</a>
+                <span class="buble"></span>
+                <h5>2019</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-img posi-rele">
+                <img src="./assets/images/project-2.jpg" alt="" />
+                <div class="pop-data posi-ab">
+                  <a
+                    href="./assets/images/project-2full.jpg"
+                    data-fancybox="slider-gallery"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work-data posi-rele">
+                <a href="#">daycare center</a>
+                <span class="buble"></span>
+                <h5>2007</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-img posi-rele">
+                <img src="./assets/images/project-3.jpg" alt="" />
+                <div class="pop-data posi-ab">
+                  <a
+                    href="./assets/images/project-3full.jpg"
+                    data-fancybox="slider-gallery"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work-data posi-rele">
+                <a href="#">Sun valley hotel</a>
+                <span class="buble"></span>
+                <h5>2011</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-img posi-rele">
+                <img src="./assets/images/project-4.jpg" alt="" />
+                <div class="pop-data posi-ab">
+                  <a
+                    href="./assets/images/project-4full.jpg"
+                    data-fancybox="slider-gallery"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work-data posi-rele">
+                <a href="#">Residential house: living room</a>
+                <span class="buble"></span>
+                <h5>2013</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-img posi-rele">
+                <img src="./assets/images/project-5.jpg" alt="" />
+                <div class="pop-data posi-ab">
+                  <a
+                    href="./assets/images/project-5full.jpg"
+                    data-fancybox="slider-gallery"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work-data posi-rele">
+                <a href="#">Social Center</a>
+                <span class="buble"></span>
+                <h5>2014</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-img posi-rele">
+                <img src="./assets/images/project-6.jpg" alt="" />
+                <div class="pop-data posi-ab">
+                  <a
+                    href="./assets/images/project-6full.jpg"
+                    data-fancybox="slider-gallery"
+                    ><i class="fa-solid fa-magnifying-glass-plus"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work-data posi-rele">
+                <a href="#">Small Kitchen</a>
+                <span class="buble"></span>
+                <h5>2017</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="row footer-boxes">
+        <div class="footer-box f-first">
+          <a href="index.html"
+            ><img src="./assets/images/logo-footer.png" alt=""
+          /></a>
+          <p>
+            Our design studio helps clients make wise decisions and avoid costly
+            mistakes. Allow our designers and architectors to make your dream
+            space a reality.
+          </p>
+          <div class="f-contact">
+            <div class="f-box">
+              <h4>Address</h4>
+              <a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a>
+            </div>
+            <div class="f-box">
+              <h4>Phones</h4>
+              <a href="#">+1 323-913-4688,</a> <a href="#"> +1 323-888-4554</a>
+            </div>
+            <div class="f-box">
+              <h4>E-mails</h4>
+              <a href="#"> info@demolink.org,</a>
+              <a href="#"> mail@demolink.org</a>
+            </div>
+          </div>
+          <div class="f-links">
+            <ul class="f-social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div class="f-form">
+            <h3>Questions? Contact Us</h3>
+            <form action="#">
+              <input type="text" placeholder="Name" />
+              <input type="email" name="" id="" placeholder="E-mail" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button class="f-btn teko">SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div class="f-third">
+            <h3>See how we work</h3>
+            <div class="f-list">
+              <ul class="list-item">
+                <li>
+                  <a href="#">Home design<span></span></a>
+                </li>
+                <li>
+                  <a href="#">Commercial design<span></span></a>
+                </li>
+                <li>
+                  <a href="#">Office design<span></span></a>
+                </li>
+                <li>
+                  <a href="#">Consultations<span></span></a>
+                </li>
+                <li>
+                  <a href="#">Architect services<span></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright posi-rele">
+        <span
+          ><span>&copy;</span>Creator. All rights reserved. Design by
+          <a href="#">TemplateMonster</a></span
+        >
+        <a id="top-scroll-btn"><i class="fa-solid fa-angles-up"></i></a>
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
